@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@import"assets/fonts";
+@import"assets/colors";
+@import"assets/header";
+@import"assets/main";
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: $purple-primary;
+    color: $white-fonte;
+    padding: 45px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+}
+
+img{
+    width: 100%;
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer; 
+}

@@ -1,0 +1,79 @@
+main{
+    display: flex;
+    flex-direction: column;
+    
+    .seccaoOw{
+        display: flex;
+        flex-direction: row;
+        background-color: $purple-primary;
+        border-radius: 20px 0px 20px 20px;
+        padding: 80px;
+        height: 620px;
+        position: relative;
+
+
+        .mainInfo{
+            flex: 1;
+            padding: 20px;
+            p{
+                color: rgb(139, 139, 139);
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                letter-spacing: 5px;
+                padding: 25px 0;
+            }
+
+            h1{
+                max-width: 500px;
+                text-transform: uppercase;
+                font-weight: bold;
+                line-height: 62px;
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+
+            button{
+                background-color: rgba(128, 128, 128, 0.685);
+                padding: 14px 45px;
+                border-radius: 25px;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                color: $white-fonte;
+                font-weight: bold;
+                transition: all 0.7s;
+            }
+
+            button:hover{
+                background-color:rgba(168, 166, 166, 0.897) ;
+            }
+        }
+
+        .mainImg{
+            flex: 1;
+            // position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            img{
+                display: flex;
+                align-items: center;
+                position: absolute;
+                overflow: hidden;
+                width: 300px;
+                right: 90px;
+                bottom: 0;
+            }
+        }
+    }
+
+}
+
+.mainCard{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+}
+
+
