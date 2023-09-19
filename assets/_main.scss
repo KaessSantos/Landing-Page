@@ -1,6 +1,8 @@
+
 main{
     display: flex;
     flex-direction: column;
+
     
     .seccaoOw{
         display: flex;
@@ -12,9 +14,11 @@ main{
         position: relative;
 
 
+
         .mainInfo{
             flex: 1;
-            padding: 20px;
+            padding: 0px 0 80px 0;
+
             p{
                 color: rgb(139, 139, 139);
                 text-transform: uppercase;
@@ -72,7 +76,80 @@ main{
         }
     }
 
+    @media screen and (max-width:1400px) {
+        .seccaoOw{
+          height: 700px;
+        }
+    }
+
+    @media screen and (max-width:1100px) {
+        .seccaoOw{
+            height: 800px;
+            flex-direction: column;
+
+
+            .mainImg img{
+                width: 250px;
+            }
+        }
+
+        .mainCard{
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width:768px) {
+        .seccaoOw{
+          height: 900px;
+          padding: 15px;
+
+          .mainInfo h1{
+            font-size: 1.8rem;
+          }
+        }
+
+        
+    }
+
+    @media screen and (max-width: 400px){
+        .seccaoOw{
+            height: 650px;
+            padding: 10px 10px 0 10px;
+            
+            .mainInfo{
+                padding: 0;
+
+                h1{
+                    font-size: 1.7rem;
+                    line-height: 42px;
+                }
+
+                p{
+                    font-size: 1.3rem;
+                }
+
+                button{
+                padding: 14px 25px;
+                font-size: 0.8rem;
+                }
+            }
+
+            .mainImg{
+                position: relative;
+                overflow: hidden;
+                img{
+                    position: absolute;
+                    bottom: -100px;
+                }
+            }
+        }
+    }
+
 }
+
+
+
+
 
 @keyframes animar{
    0%{
@@ -214,6 +291,37 @@ main{
         }
     }
 }
+
+
+
+@media screen and (max-width:400px){
+    .mainCard{
+       
+       
+        .cardOw{
+            padding: 25px 25px;
+            h2{
+                font-size: 2rem;
+                line-height: 35px;
+
+            }
+
+           
+
+            img{
+                width: 350px;
+                right: -200px;
+                top: -40px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
 
 
 

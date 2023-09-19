@@ -6,6 +6,12 @@
     position: relative;
 }
 
+  @media screen and (max-width: 400px){
+    #container{
+      padding: 20px;
+    }
+  }
+
 
 header{
     display: flex;
@@ -56,4 +62,26 @@ header{
       }
       
     }
+}
+
+@media screen and (max-width: 400px){
+  header{
+    padding: 0;
+
+    a{
+      font-size: 2rem;
+      padding-bottom: 15px;
+      letter-spacing: 6px;
+      font-weight: bold;
+    }
+
+    ul{
+      display: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px){
+
 }

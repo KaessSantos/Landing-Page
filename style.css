@@ -26,6 +26,11 @@
   position: relative;
 }
 
+@media screen and (max-width: 400px) {
+  #container {
+    padding: 20px;
+  }
+}
 header {
   display: flex;
   flex-direction: row;
@@ -66,6 +71,20 @@ header ul li:hover {
   color: rgba(161, 157, 157, 0.616);
 }
 
+@media screen and (max-width: 400px) {
+  header {
+    padding: 0;
+  }
+  header a {
+    font-size: 2rem;
+    padding-bottom: 15px;
+    letter-spacing: 6px;
+    font-weight: bold;
+  }
+  header ul {
+    display: none;
+  }
+}
 main {
   display: flex;
   flex-direction: column;
@@ -81,7 +100,7 @@ main .seccaoOw {
 }
 main .seccaoOw .mainInfo {
   flex: 1;
-  padding: 20px;
+  padding: 0px 0 80px 0;
 }
 main .seccaoOw .mainInfo p {
   color: rgb(139, 139, 139);
@@ -130,6 +149,60 @@ main .seccaoOw .mainImg img {
   animation-duration: 30s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+}
+@media screen and (max-width: 1400px) {
+  main .seccaoOw {
+    height: 700px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  main .seccaoOw {
+    height: 800px;
+    flex-direction: column;
+  }
+  main .seccaoOw .mainImg img {
+    width: 250px;
+  }
+  main .mainCard {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .seccaoOw {
+    height: 900px;
+    padding: 15px;
+  }
+  main .seccaoOw .mainInfo h1 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .seccaoOw {
+    height: 650px;
+    padding: 10px 10px 0 10px;
+  }
+  main .seccaoOw .mainInfo {
+    padding: 0;
+  }
+  main .seccaoOw .mainInfo h1 {
+    font-size: 1.7rem;
+    line-height: 42px;
+  }
+  main .seccaoOw .mainInfo p {
+    font-size: 1.3rem;
+  }
+  main .seccaoOw .mainInfo button {
+    padding: 14px 25px;
+    font-size: 0.8rem;
+  }
+  main .seccaoOw .mainImg {
+    position: relative;
+    overflow: hidden;
+  }
+  main .seccaoOw .mainImg img {
+    position: absolute;
+    bottom: -100px;
+  }
 }
 
 @keyframes animar {
@@ -252,6 +325,20 @@ main .seccaoOw .mainImg img {
   right: 0;
 }
 
+@media screen and (max-width: 400px) {
+  .mainCard .cardOw {
+    padding: 25px 25px;
+  }
+  .mainCard .cardOw h2 {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+  .mainCard .cardOw img {
+    width: 350px;
+    right: -200px;
+    top: -40px;
+  }
+}
 body {
   width: 100%;
   height: 100vh;
@@ -261,6 +348,11 @@ body {
   position: relative;
 }
 
+@media screen and (max-width: 400px) {
+  body {
+    padding: 15px;
+  }
+}
 a {
   text-decoration: none;
   cursor: pointer;
