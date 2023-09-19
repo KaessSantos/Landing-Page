@@ -1,9 +1,9 @@
 #container{
-    height: 100vh;
-    max-width: 100%;
+    width: 100%;
     background-color: $black-primary;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     padding: 45px;
+    position: relative;
 }
 
 
@@ -14,16 +14,19 @@ header{
     gap: 35px;
     padding: 0 0 28px 0;
     position: relative;
-    border-top-right-radius: 20px;
     overflow: hidden;
 
     .destaque{
-        position: absolute;
+        position:absolute;
         right: 0px;
-        bottom: -4px;
+        top: 2px;
+        background-color: red;
         overflow: hidden;
-        width: 350px;
-        overflow: hidden;
+        width: 300px;
+
+        img{
+          width: 80px;
+        }
         
         
     }
@@ -31,9 +34,9 @@ header{
 
     a{
         color: $white-fonte;
-        font-family: poppins-normal;
+        font-family: poppins;
         font-size: 2.5rem;
-        
+        text-transform: uppercase;
     }
 
     ul{
